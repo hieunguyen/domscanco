@@ -20,6 +20,96 @@
       .video-wrapper {
         position: relative;
         width: 100%;
+        padding-bottom: 56.25%;
+      }
+      .video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+      @media screen and (max-width: 768px) {
+        .video-container {
+          width: 100%;
+        }
+      }
+      /* New step styling */
+      .steps {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 2rem;
+      }
+      .step-item {
+        flex: 1;
+        text-align: center;
+        padding: 0 1rem;
+        position: relative;
+      }
+      .step-item:not(:last-child):after {
+        content: "";
+        position: absolute;
+        top: 2.5rem;
+        right: -50%;
+        width: 100%;
+        height: 2px;
+        background: #dbdbdb;
+        z-index: 0;
+      }
+      .step-marker {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        background: #00d1b2;
+        color: white;
+        font-size: 2rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1.5rem;
+        position: relative;
+        z-index: 1;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .step-details {
+        max-width: 250px;
+        margin: 0 auto;
+      }
+      .step-details .is-size-4 {
+        margin-bottom: 0.5rem;
+        color: #363636;
+        font-weight: 600;
+      }
+      .step-details p:not(.is-size-4) {
+        color: #4a4a4a;
+        font-size: 1rem;
+      }
+      @media screen and (max-width: 768px) {
+        .steps {
+          flex-direction: column;
+        }
+        .step-item {
+          margin-bottom: 2rem;
+        }
+        .step-item:not(:last-child):after {
+          display: none;
+        }
+      }
+    </style>
+    <!-- <style>
+      .video-container {
+        max-width: 640px;
+        margin: 0 auto;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 6px;
+        overflow: hidden;
+      }
+      .video-wrapper {
+        position: relative;
+        width: 100%;
         padding-bottom: 56.25%; /* 16:9 aspect ratio */
       }
       .video-wrapper iframe {
@@ -35,7 +125,7 @@
           width: 100%;
         }
       }
-    </style>
+    </style> -->
   </head>
   <body>
     <!-- Hero Section -->
@@ -45,12 +135,10 @@
           <div class="columns is-vcentered">
             <div class="column is-5">
               <h1 class="title is-1">Domscan</h1>
-              <h2 class="subtitle is-3">
-                AI-Powered Domain Discovery & Validation
-              </h2>
+              <h2 class="subtitle is-3">Domain Availability in Every Chat</h2>
               <p class="subtitle mb-6">
-                Automatically scan domains within any webpage and get
-                intelligent suggestions powered by AI.
+                Scans domains in LLM conversations and checks availability in
+                real time.
               </p>
               <a
                 href="https://chromewebstore.google.com/detail/amodal/mofmenonbklninioopaabladofpphndb"
@@ -97,8 +185,8 @@
                 Smart Scanning
               </h3>
               <p>
-                Automatically detects and analyzes domains on any webpage you
-                visit.
+                Instantly checks the availability of domains mentioned during
+                conversations with LLMs like ChatGPT and Claude.
               </p>
             </div>
           </div>
@@ -108,11 +196,11 @@
                 <span class="icon has-text-primary">
                   <i class="fas fa-robot"></i>
                 </span>
-                AI-Powered
+                Seamless Integration with LLMs
               </h3>
               <p>
-                Leverages advanced AI models to generate and validate domain
-                suggestions.
+                Works directly within the LLM environment, showing domain
+                availability inline without leaving the conversation.
               </p>
             </div>
           </div>
@@ -122,10 +210,11 @@
                 <span class="icon has-text-primary">
                   <i class="fas fa-bolt"></i>
                 </span>
-                Instant Results
+                One-Click Purchase
               </h3>
               <p>
-                Get domain suggestions and availability checks in real-time.
+                Quickly buy the domain you want with a single click, making the
+                process from finding to purchasing simple and fast.
               </p>
             </div>
           </div>
@@ -138,29 +227,35 @@
       <div class="container">
         <h2 class="title is-2 has-text-centered mb-6">How It Works</h2>
         <div class="columns is-centered">
-          <div class="column is-8">
+          <div class="column is-10">
             <div class="steps">
               <div class="step-item">
                 <div class="step-marker">1</div>
                 <div class="step-details">
-                  <p class="is-size-4">Install the extension</p>
-                  <p>Add Domscan to your Chrome browser with one click.</p>
+                  <p class="is-size-4">Install Domscan</p>
+                  <p>
+                    Add the Domscan extension to your Chrome browser with a
+                    single click.
+                  </p>
                 </div>
               </div>
               <div class="step-item">
                 <div class="step-marker">2</div>
                 <div class="step-details">
-                  <p class="is-size-4">Browse normally</p>
-                  <p>Visit any webpage containing domain names.</p>
+                  <p class="is-size-4">Engage with an LLM</p>
+                  <p>
+                    Use ChatGPT, Claude, or any other LLM to generate domain
+                    name ideas during your conversation.
+                  </p>
                 </div>
               </div>
               <div class="step-item">
                 <div class="step-marker">3</div>
                 <div class="step-details">
-                  <p class="is-size-4">Get suggestions</p>
+                  <p class="is-size-4">Get Instant Availability Check</p>
                   <p>
-                    Click the extension icon to see AI-generated domain
-                    suggestions.
+                    See real-time availability checks for the domain ideas
+                    suggested by the LLM.
                   </p>
                 </div>
               </div>
@@ -175,7 +270,7 @@
       <div class="container has-text-centered">
         <h2 class="title is-2">Ready to Enhance Your Domain Research?</h2>
         <p class="subtitle is-4 mb-6">
-          Join thousands of users who are already using Domscan
+          Join many users who are already using Domscan
         </p>
         <a
           href="https://chromewebstore.google.com/detail/amodal/mofmenonbklninioopaabladofpphndb"
