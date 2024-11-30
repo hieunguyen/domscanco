@@ -3,54 +3,147 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to DomScan</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      }
-      .container {
-        text-align: center;
-        background-color: #fff;
-        padding: 30px;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        max-width: 600px;
-        width: 100%;
-      }
-      h1 {
-        color: #333;
-      }
-      p {
-        color: #666;
-        font-size: 1.2em;
-      }
-      .btn {
-        background-color: #4caf50;
-        color: white;
-        padding: 10px 20px;
-        font-size: 1.1em;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        text-decoration: none;
-      }
-      .btn:hover {
-        background-color: #45a049;
-      }
-    </style>
+    <title>Domscan - Smart Domain Scanner Extension</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.2/css/bulma.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
   </head>
   <body>
-    <div class="container">
-      <h1>Welcome to DomScan 2!</h1>
-      <p>Your extension website is live. This is a simple test page.</p>
-      <a href="#" class="btn">Click Here</a>
-    </div>
+    <!-- Hero Section -->
+    <section class="hero is-primary is-medium">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title is-1">Domscan</h1>
+          <h2 class="subtitle is-3">
+            AI-Powered Domain Discovery & Validation
+          </h2>
+          <a
+            href="https://chromewebstore.google.com/detail/amodal/mofmenonbklninioopaabladofpphndb"
+            class="button is-light is-large"
+            target="_blank"
+          >
+            <span class="icon">
+              <i class="fab fa-chrome"></i>
+            </span>
+            <span>Add to Chrome</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section">
+      <div class="container">
+        <div class="columns is-multiline">
+          <div class="column is-4">
+            <div class="box">
+              <h3 class="title is-4">
+                <span class="icon has-text-primary">
+                  <i class="fas fa-search"></i>
+                </span>
+                Smart Scanning
+              </h3>
+              <p>
+                Automatically detects and analyzes domains on any webpage you
+                visit.
+              </p>
+            </div>
+          </div>
+          <div class="column is-4">
+            <div class="box">
+              <h3 class="title is-4">
+                <span class="icon has-text-primary">
+                  <i class="fas fa-robot"></i>
+                </span>
+                AI-Powered
+              </h3>
+              <p>
+                Leverages advanced AI models to generate and validate domain
+                suggestions.
+              </p>
+            </div>
+          </div>
+          <div class="column is-4">
+            <div class="box">
+              <h3 class="title is-4">
+                <span class="icon has-text-primary">
+                  <i class="fas fa-bolt"></i>
+                </span>
+                Instant Results
+              </h3>
+              <p>
+                Get domain suggestions and availability checks in real-time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="section has-background-light">
+      <div class="container">
+        <h2 class="title is-2 has-text-centered mb-6">How It Works</h2>
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="steps">
+              <div class="step-item">
+                <div class="step-marker">1</div>
+                <div class="step-details">
+                  <p class="is-size-4">Install the extension</p>
+                  <p>Add Domscan to your Chrome browser with one click.</p>
+                </div>
+              </div>
+              <div class="step-item">
+                <div class="step-marker">2</div>
+                <div class="step-details">
+                  <p class="is-size-4">Browse normally</p>
+                  <p>Visit any webpage containing domain names.</p>
+                </div>
+              </div>
+              <div class="step-item">
+                <div class="step-marker">3</div>
+                <div class="step-details">
+                  <p class="is-size-4">Get suggestions</p>
+                  <p>
+                    Click the extension icon to see AI-generated domain
+                    suggestions.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+      <div class="container has-text-centered">
+        <h2 class="title is-2">Ready to Enhance Your Domain Research?</h2>
+        <p class="subtitle is-4 mb-6">
+          Join thousands of users who are already using Domscan
+        </p>
+        <a
+          href="https://chromewebstore.google.com/detail/amodal/mofmenonbklninioopaabladofpphndb"
+          class="button is-primary is-large"
+          target="_blank"
+        >
+          <span class="icon">
+            <i class="fab fa-chrome"></i>
+          </span>
+          <span>Add to Chrome - It's Free!</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>© 2024 Domscan. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
